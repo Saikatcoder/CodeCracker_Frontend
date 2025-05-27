@@ -49,7 +49,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-stone-900 to-purple-900 via-pink- min-h-screen flex items-center justify-center p-4">
+    <div className="bg-gradient-to-r from-stone-900 to-purple-900  min-h-screen flex items-center justify-center p-4">
       <div
         className="bg-gradient-to-r from-stone-900 to-purple-900  rounded-3xl max-w-5xl w-full flex flex-col md:flex-row overflow-hidden "
         style={{ minHeight: 520 }}

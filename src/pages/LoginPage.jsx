@@ -81,13 +81,21 @@ const LoginPage = () => {
             </div>
             {errors.password && <p className="text-xs text-red-500">{errors.password.message}</p>}
 
-            <button
-              type="submit"
-              disabled={ isLoggingIn}
-              className="w-full bg-orange-600 text-white font-semibold py-3 rounded-md transition-colors duration-200"
-            >
-              {isSubmitting ? (<><Loader2 className="animate-spin w-5 h-5 mx-auto" />Looding.......</>) : "Login"}
-            </button>
+          <button
+  type="submit"
+  disabled={isLoggingIn}
+  className="w-full bg-orange-600 text-white font-semibold py-3 rounded-md transition-colors duration-200 flex items-center justify-center gap-2"
+>
+  {isSubmitting ? (
+    <>
+      <Loader2 className="animate-spin w-5 h-5" />
+      Loading...
+    </>
+  ) : (
+    "Login"
+  )}
+</button>
+
           </form>
 
           {/* Social logins */}
